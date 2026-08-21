@@ -7,9 +7,22 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import java.time.LocalDateTime;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import jakarta.persistence.Column;
 import jakarta.persistence.Table;
 
+@JsonPropertyOrder({
+    "id",
+    "dni",
+    "cellPhone",
+    "firstName",
+    "lastName",
+    "state",
+    "createdAt",
+    "updatedAt",
+    "deletedAt",
+    "restoredAt"
+})
 @Entity
 @Data                      // ✅ genera los getters y setters
 @Table(name = "customer")  // ✅ nombre de la tabla en la base de datos

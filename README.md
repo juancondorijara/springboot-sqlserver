@@ -1,5 +1,13 @@
 # SPRING BOOT + SQL SERVER (DOCKER)
 
+## 💻 STACK TECNOLÓGICO
+- Java: JDK 25
+- IDE: IntelliJ IDEA | Visual Studio Code | Codespace
+- Maven: Apache Maven
+- Frameworks: Spring Boot
+- Instalar la extensión en Visual de: `Extension Pack for Java`
+- Instalar la extensión en Visual de: `Database Cliente`
+
 ## 📁 Estructura de Carpetas
 
 ```text
@@ -66,11 +74,15 @@ __[http://localhost:8085/swagger-ui.html](http://localhost:8085/swagger-ui.html)
 [
   {
     "id": 1,
-    "dni": "12345678",
+    "dni": "74564578",
     "cellPhone": "987654321",
     "firstName": "Juan",
     "lastName": "Sanchez",
-    "state": "A"
+    "state": "A",
+    "createdAt": "21-ago.-2026 17:24:01",
+    "updatedAt": null,
+    "deletedAt": null,
+    "restoredAt": null
   }
 ]
 ````
