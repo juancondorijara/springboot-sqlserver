@@ -17,12 +17,12 @@
 ├── 📁 .mvn/
 ├── 📁 src/
 │   ├── 📁 main/
-│   │   ├── 📁 java/pe/edu/vallegrande/project
+│   │   ├── 📁 java/pe/edu/vallegrande/app
 │   │   │   ├── 📁 model/
 │   │   │   ├── 📁 repository/
 │   │   │   ├── 📁 rest/
 │   │   │   └── 📁 service/
-│   │   ├── 📄 ProjectApplication.java
+│   │   ├── 📄 AppApplication.java
 │   │   └── 📁 resources/
 │   │       ├── 📁 sql/db.sql
 │   │       └── 📄 application.yml
@@ -30,7 +30,6 @@
 ├── 📁 target/
 ├── 📄 .gitattributes
 ├── 📄 .gitignore
-├── 📄 HELP.md
 ├── 📄 mvnw
 ├── 📄 mvnw.cmd
 ├── 📄 pom.xml
