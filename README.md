@@ -6,7 +6,7 @@
 - Maven: Apache Maven
 - Frameworks: Spring Boot
 - Instalar la extensión en Visual de: `Extension Pack for Java`
-- Instalar la extensión en Visual de: `Database Cliente`
+- Instalar la extensión en Visual de: `Database Client`
 
 ## 📁 Estructura de Carpetas
 
