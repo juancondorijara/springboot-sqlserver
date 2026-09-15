@@ -24,24 +24,25 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 
 # 👉 DESCARGAR Y SUBIR MAVEN A TU USUARIO DOCKERHUB
 # docker pull maven:3.9-amazoncorretto-25-alpine
-# docker tag 2246c1050783 juan321/maven:3.9-amazoncorretto-25-alpine
-# docker push juan321/maven:3.9-amazoncorretto-25-alpine}
+# docker images
+# docker tag REEMPLAZAR_ID_IMAGEN TU_USUARIO_DOCKERHUB/maven:3.9-amazoncorretto-25-alpine
+# docker push TU_USUARIO_DOCKERHUB/maven:3.9-amazoncorretto-25-alpine
 
 # 👉 DESCARGAR Y SUBIR JDK25 A TU USUARIO DOCKERHUB
 # docker pull eclipse-temurin:25-jre-alpine
-# docker tag 5fcc27581b23 juan321/eclipse-temurin:25-jre-alpine
-# docker push juan321/eclipse-temurin:25-jre-alpine
+# docker images
+# docker tag REEMPLAZAR_ID_IMAGEN TU_USUARIO_DOCKERHUB/eclipse-temurin:25-jre-alpine
+# docker push TU_USUARIO_DOCKERHUB/eclipse-temurin:25-jre-alpine
 
 
 
 # ✅ PASO 3 --------------------------------------------------------------------------------------------
 
 # 👉 CONSTRUIR UNA IMÁGEN MEDIANTE UN Dockerfile EN UNA CARPETA
-# docker build -t juan321/springboot-sqlserver:1.0 -f dockerfile-juan/Dockerfile .
-
+# docker build -t TU_USUARIO_DOCKERHUB/springboot-sqlserver:1.0 -f dockerfile-juan/Dockerfile .
 
 # 👉 EJECUTAR Y SUBIR TU IMÁGEN GENERADA A DOCKERHUB
-# docker run -d --name springboot-sqlserver -p 8085:8085 juan321/springboot-sqlserver:1.0
-# docker push juan321/springboot-sqlserver:1.0
+# docker run -d --name springboot-sqlserver -p 8085:8085 TU_USUARIO_DOCKERHUB/springboot-sqlserver:1.0
+# docker push TU_USUARIO_DOCKERHUB/springboot-sqlserver:1.0
 
 --------------------------------------------------------------------------------------------
