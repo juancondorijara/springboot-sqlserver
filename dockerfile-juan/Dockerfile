@@ -45,4 +45,4 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 # docker run -d --name springboot-sqlserver -p 8085:8085 TU_USUARIO_DOCKERHUB/springboot-sqlserver:1.0
 # docker push TU_USUARIO_DOCKERHUB/springboot-sqlserver:1.0
 
---------------------------------------------------------------------------------------------
+# ✅ FINAL --------------------------------------------------------------------------------------------
