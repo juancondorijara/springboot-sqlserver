@@ -15,8 +15,11 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 
 # ✅ PASO 1 --------------------------------------------------------------------------------------------
 
+# CREAR UNA RED COMPARTIDA PARA LA COMUNICACIÓN ENTRE CONTENEDORES
+# docker network create my-network
+
 # EJECUTAR UN CONTENEDOR SQL SERVER MEDIANTE COMANDO
-# docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Admin12345" -p 1433:1433 --name sqlserver -d juan321/sql-server:2022
+# docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Admin12345" -p 1433:1433 --name sqlserver --network my-network -d juan321/sql-server:2022
 
 
 
@@ -42,7 +45,7 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 # docker build -t TU_USUARIO_DOCKERHUB/springboot-sqlserver:1.0 -f dockerfile-juan/Dockerfile .
 
 # 👉 EJECUTAR Y SUBIR TU IMÁGEN GENERADA A DOCKERHUB
-# docker run -d --name springboot-sqlserver -p 8085:8085 TU_USUARIO_DOCKERHUB/springboot-sqlserver:1.0
+# docker run -d --name springboot-sqlserver -p 8085:8085 --network my-network TU_USUARIO_DOCKERHUB/springboot-sqlserver:1.0
 # docker push TU_USUARIO_DOCKERHUB/springboot-sqlserver:1.0
 
 # ✅ FINAL --------------------------------------------------------------------------------------------

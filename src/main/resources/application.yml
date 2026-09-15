@@ -4,7 +4,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:sqlserver://localhost:1433;databaseName=model;encrypt=true;trustServerCertificate=true  ## Cambiar "model" por tu base de datos
+    url: jdbc:sqlserver://sqlserver:1433;databaseName=model;encrypt=true;trustServerCertificate=true  ## Cambiar "model" por tu base de datos
     username: sa          ## Cambiar por tu usuario
     password: Admin12345          ## Cambiar por tu contraseña
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
