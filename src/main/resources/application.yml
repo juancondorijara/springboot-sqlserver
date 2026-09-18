@@ -1,13 +1,13 @@
 server:
-  port: 8085 # Puerto en el que se ejecutará la aplicación
+  port: ${PORT:8085} # Puerto en el que se ejecutará la aplicación
   url: ${SERVER_URL:http://localhost:8085}  # Valor por defecto si SERVER_URL no está configurado
 
 spring:
   datasource:
-    url: jdbc:sqlserver://sqlserver:1433;databaseName=model;encrypt=true;trustServerCertificate=true  ## Cambiar "model" por tu base de datos
-    username: sa          ## Cambiar por tu usuario
-    password: Admin12345          ## Cambiar por tu contraseña
-    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: ${DATABASE_URL:jdbc:sqlserver://sqlserver:1433;databaseName=model;encrypt=true;trustServerCertificate=true}  ## Cambiar "model" por tu base de datos
+    username: ${DATABASE_USERNAME:sa}          ## Cambiar por tu usuario
+    password: ${DATABASE_PASSWORD:Admin12345}          ## Cambiar por tu contraseña
+    driver-class-name: ${DATABASE_DRIVER:com.microsoft.sqlserver.jdbc.SQLServerDriver}
   jpa:
     database-platform: org.hibernate.dialect.SQLServerDialect
     hibernate:

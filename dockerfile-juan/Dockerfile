@@ -42,7 +42,7 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 # ✅ PASO 3 --------------------------------------------------------------------------------------------
 
 # 👉 CONSTRUIR UNA IMÁGEN MEDIANTE UN Dockerfile EN UNA CARPETA
-# docker build -t TU_USUARIO_DOCKERHUB/springboot-sqlserver:1.0 -f dockerfile-juan/Dockerfile .
+# docker build -t TU_USUARIO_DOCKERHUB/springboot-sqlserver:3.0 -f dockerfile-juan/Dockerfile .
 
 # 👉 EJECUTAR Y SUBIR TU IMÁGEN GENERADA A DOCKERHUB
 # docker run -d --name springboot-sqlserver -p 8085:8085 --network my-network TU_USUARIO_DOCKERHUB/springboot-sqlserver:1.0
