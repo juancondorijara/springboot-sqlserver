@@ -27,17 +27,18 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v1
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME_JUAN }}   # Cambia por el nombre de tu SECRET
-          password: ${{ secrets.DOCKERHUB_TOKEN_JUAN }}      # Cambia por el nombre de tu SECRET
+          username: ${{ secrets.DOCKERHUB_USERNAME_JUAN }}   # 👈Cambia por el nombre de tu SECRET
+          password: ${{ secrets.DOCKERHUB_TOKEN_JUAN }}      # 👈Cambia por el nombre de tu SECRET
 
       # 3. Build y Push con tags latest y SHA
       - name: Build and Push Docker Image to Docker Hub
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: ./dockerfile-juan/Dockerfile   # Cambia por la ruta de tu carpeta del Dockerfile
+          file: ./dockerfile-juan/Dockerfile   # 👈Cambia por la ruta de tu carpeta del Dockerfile
           push: true
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME_JUAN }}/s10-github-dockerhub:latest
             ${{ secrets.DOCKERHUB_USERNAME_JUAN }}/s10-github-dockerhub:${{ github.sha }}
-          # Puedes cambiar el nombre de la imágen Docker, en este caso se llama "s10-github-dockerhub"
+          # 👆Cambia por el nombre de tu SECRET
+          # 👆Puedes cambiar el nombre de la imágen Docker, en este caso se llama "s10-github-dockerhub"
