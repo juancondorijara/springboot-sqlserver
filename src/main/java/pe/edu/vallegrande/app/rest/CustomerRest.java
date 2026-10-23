@@ -99,7 +99,7 @@ public class CustomerRest {
     // 🌐✅ Mapear Endpoint Exportar PDF - tipo GET en POSTMAN
     @GetMapping("/pdf/{state}")
     @Operation(summary = "Export PDF", description = "Export PDF file")
-    public ResponseEntity<byte[]> exportPdf(@PathVariable String state) throws Exception {
+    public ResponseEntity<byte[]> exportPdfByState(@PathVariable String state) throws Exception {
         byte[] pdf = customerService.exportPdfByState(state);
         return ResponseEntity.ok()
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=customers.pdf")
@@ -109,7 +109,7 @@ public class CustomerRest {
     // 🌐✅ Mapear Endpoint Exportar Excel - tipo GET en POSTMAN
     @GetMapping("/excel/{state}")
     @Operation(summary = "Export Excel", description = "Export Excel file")
-    public ResponseEntity<byte[]> exportExcel(@PathVariable String state) throws Exception {
+    public ResponseEntity<byte[]> exportExcelByState(@PathVariable String state) throws Exception {
         byte[] excel = customerService.exportExcelByState(state);
         return ResponseEntity.ok()
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=customers.xlsx")
