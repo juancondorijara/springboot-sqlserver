@@ -4,13 +4,12 @@ version: '3'
 
 services:
   backend:
-    image: juan321/springboot-sqlserver:3.0   # cambiar por tu usuario de dockerhub
+    image: juan321/springboot-sqlserver:4.0   # cambiar por tu usuario de dockerhub
     container_name: springboot-sqlserver      # nombre del contenedor de Spring Boot
     ports:
       - "8085:8085"
     environment:
       - PORT=8085
-      - SERVER_URL=http://localhost:8085
       - DATABASE_URL=jdbc:sqlserver://sqlserver:1433;databaseName=model;encrypt=true;trustServerCertificate=true
       - DATABASE_USERNAME=sa
       - DATABASE_PASSWORD=Admin12345

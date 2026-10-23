@@ -1,6 +1,6 @@
 server:
   port: ${PORT:8085} # Puerto en el que se ejecutará la aplicación
-  url: ${SERVER_URL:http://localhost:8085}  # Valor por defecto si SERVER_URL no está configurado
+  forward-headers-strategy: framework
 
 spring:
   datasource:

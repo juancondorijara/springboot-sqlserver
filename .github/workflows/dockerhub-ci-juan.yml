@@ -38,7 +38,7 @@ jobs:
           file: ./dockerfile-juan/Dockerfile   # 👈Cambia por la ruta de tu carpeta del Dockerfile
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME_JUAN }}/s10-github-dockerhub:latest
-            ${{ secrets.DOCKERHUB_USERNAME_JUAN }}/s10-github-dockerhub:${{ github.sha }}
+            ${{ secrets.DOCKERHUB_USERNAME_JUAN }}/springboot-sqlserver:latest
+            ${{ secrets.DOCKERHUB_USERNAME_JUAN }}/springboot-sqlserver:${{ github.sha }}
           # 👆Cambia por el nombre de tu SECRET
-          # 👆Puedes cambiar el nombre de la imágen Docker, en este caso se llama "s10-github-dockerhub"
+          # 👆Puedes cambiar el nombre de la imágen Docker, en este caso se llama "springboot-sqlserver"
