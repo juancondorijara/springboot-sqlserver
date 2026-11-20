@@ -1,3 +1,6 @@
+# Provocando un error en GitHub Actions + DockerHub
+# El Fallo y error es por motivos de credenciales
+
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
